@@ -1,0 +1,58 @@
+// PAGINA INCIO
+
+.body {
+  background-color: rgb(42, 42, 42);
+  display: grid;
+  grid-area: "nav nav nav", "main main main";
+}
+
+.header {
+  grid-area: "nav";
+  width: 100vw;
+  height: 15vh;
+  overflow: hidden;
+  .logo {
+    width: 10.5rem;
+    margin-left: 45vw;
+  }
+}
+
+.mainInicio {
+  grid-area: "main";
+  width: 100vw;
+  height: 85vh;
+  background-image: url(../img/fondo.png);
+  background-position: center;
+  background-size: cover;
+  .inicioText {
+    position: relative;
+    top: 20rem;
+    left: 2rem;
+  }
+  .textUno {
+    font-size: 5rem;
+    color: black;
+    text-shadow: rgb(158, 158, 158) 1px 1px;
+  }
+  .textDos {
+    font-size: 6rem;
+    color: #ffbe16;
+    font-family: "Dancing Script", cursive;
+    text-shadow: black 1px 1px;
+  }
+  .inicioBtn {
+    font-size: 3rem;
+    color: black;
+    background-color: #ffbe16;
+    padding: 1.2rem;
+    border-radius: 3rem;
+    font-weight: bold;
+    position: relative;
+    top: 25rem;
+    left: 16rem;
+    &:hover {
+      background-color: black;
+      color: #ffbe16;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// OPCIONES GENERALES
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+
+// font-family: 'Dancing Script', cursive; SECUNDARIA
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+// Configuracion z-index
+
+$-z1: 1;
+$-z2: 2;
+$-z3: 3;
+$-z4: 4;
+$-z5: 5;
+$-z6: 6;
+$-z7: 7;
+$-z8: 8;
+$-z9: 9;
+
+// COLORES
+
+$cheddar: #ffbe16;

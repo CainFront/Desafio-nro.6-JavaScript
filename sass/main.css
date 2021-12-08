@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+.body {
+  background-color: #2a2a2a;
+  display: -ms-grid;
+  display: grid;
+  grid-area: "nav nav nav", "main main main";
+}
+
+.header {
+  grid-area: "nav";
+  width: 100vw;
+  height: 15vh;
+  overflow: hidden;
+}
+
+.header .logo {
+  width: 10.5rem;
+  margin-left: 45vw;
+}
+
+.mainInicio {
+  grid-area: "main";
+  width: 100vw;
+  height: 85vh;
+  background-image: url(../img/fondo.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.mainInicio .inicioText {
+  position: relative;
+  top: 20rem;
+  left: 2rem;
+}
+
+.mainInicio .textUno {
+  font-size: 5rem;
+  color: black;
+  text-shadow: #9e9e9e 1px 1px;
+}
+
+.mainInicio .textDos {
+  font-size: 6rem;
+  color: #ffbe16;
+  font-family: "Dancing Script", cursive;
+  text-shadow: black 1px 1px;
+}
+
+.mainInicio .inicioBtn {
+  font-size: 3rem;
+  color: black;
+  background-color: #ffbe16;
+  padding: 1.2rem;
+  border-radius: 3rem;
+  font-weight: bold;
+  position: relative;
+  top: 25rem;
+  left: 16rem;
+}
+
+.mainInicio .inicioBtn:hover {
+  background-color: black;
+  color: #ffbe16;
+}
+
+.mainProducto {
+  grid-area: "main";
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainProducto .producto {
+  width: 30vw;
+  height: 115vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+          box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.mainProducto .productoTitulo {
+  font-size: 3rem;
+  color: #ffbe16;
+  font-family: "Dancing Script", cursive;
+}
+
+.mainProducto .productoIngredientes {
+  font-size: 1.7rem;
+  color: white;
+  font-variant: small-caps;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+  margin-top: -3rem;
+}
+
+.mainProducto .productoLista {
+  font-size: 1rem;
+  color: white;
+  font-variant: small-caps;
+  padding-bottom: 3rem;
+}
+
+.mainProducto .productoBtn {
+  background-color: #ffbe16;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-weight: bold;
+  font-variant: small-caps;
+  border: 2px solid black;
+}
+/*# sourceMappingURL=main.css.map */

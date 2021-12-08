@@ -1,0 +1,47 @@
+// Productos
+
+.mainProducto {
+  grid-area: "main";
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .producto {
+    width: 30vw;
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+      5px 5px 15px 5px rgba(0, 0, 0, 0);
+    &Titulo {
+      font-size: 3rem;
+      color: $cheddar;
+      font-family: "Dancing Script", cursive;
+    }
+    &Ingredientes {
+      font-size: 1.7rem;
+      color: white;
+      font-variant: small-caps;
+      text-decoration: underline;
+      margin-bottom: 1rem;
+      margin-top: -3rem;
+    }
+    &Lista {
+      font-size: 1rem;
+      color: white;
+      font-variant: small-caps;
+      padding-bottom: 3rem;
+    }
+    &Btn {
+      background-color: $cheddar;
+      font-size: 1.5rem;
+      padding: 1rem;
+      border-radius: 3rem;
+      font-weight: bold;
+      font-variant: small-caps;
+      border: 2px solid black;
+    }
+  }
+}
