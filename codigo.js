@@ -29,7 +29,7 @@ let producto18 = new Productos("Salsa Secreta", "salsa", 0);
 
 // ==================================
 
-// Valor "La Clasica" 11111111
+// Valor "La Clasica" 1
 let valorLaClasica =
   producto11.precio +
   producto7.precio +
@@ -51,11 +51,18 @@ function clasica() {
   console.log("Precio: " + valorLaClasica + " $");
   console.log("Nombre del comprador: " + nombre);
   console.log("Direccion para enviar: " + direccion);
+
+  // Push Hamburgesa "La Clasica"
+
+  let laClasica = carrito.push({
+    Producto: "Hamburgesa La Clasica",
+    precio: 190,
+  });
 }
 
 // =====================================
 
-// Valor "Super Plus" 22222222222
+// Valor "Super Plus" 2
 let valorPlus =
   producto11.precio +
   producto7.precio * 2 +
@@ -76,11 +83,18 @@ function plus() {
   console.log("Precio: " + valorPlus);
   console.log("Nombre del comprador: " + nombre);
   console.log("Direccion para enviar: " + direccion);
+
+  // Push Hamburgesa "Super Plus"
+
+  let superPlus = carrito.push({
+    Producto: "Hamburgesa Super Plus",
+    precio: 220,
+  });
 }
 
 // =====================================
 
-// Valor "Paladar Negro" 333333333
+// Valor "Paladar Negro" 3
 let valorPaladarNegro =
   producto12.precio +
   producto7.precio +
@@ -91,7 +105,7 @@ let valorPaladarNegro =
   producto2.precio;
 console.log("el valor es: " + valorPaladarNegro + " $");
 
-// Boton "Paladar Negro"
+// Boton "Paladar Negro" y con Preguntas
 function paladarNegro() {
   alert('El precio de la "Paladar Negro" es de: ' + valorPaladarNegro + " $");
   alert("A continuacion le pediremos los datos para realizar el pedido");
@@ -102,4 +116,127 @@ function paladarNegro() {
   console.log("Precio: " + valorPaladarNegro + " $");
   console.log("Nombre del comprador: " + nombre);
   console.log("Direccion para enviar: " + direccion);
+
+  // Push Hamburgesa "Paladar Negro"
+
+  let paladarNegro = carrito.push({
+    Producto: "Hamburgesa Paladar Negro",
+    precio: 360,
+  });
 }
+
+/*===============================================
+DESAFIOS CON ARRAY- Orden de Precio
+=================================================*/
+
+let arrayProductos = [
+  {
+    nombre: "lechuga",
+    tipo: "verdura",
+    precio: 20,
+  },
+  {
+    nombre: "tomate",
+    tipo: "verdura",
+    precio: 20,
+  },
+  {
+    nombre: "pepinillos",
+    tipo: "verdura",
+    precio: 20,
+  },
+  {
+    nombre: "cebolla",
+    tipo: "verdura",
+    precio: 20,
+  },
+  {
+    nombre: "cebollaCaramelizada",
+    tipo: "verdura",
+    precio: 20,
+  },
+  {
+    nombre: "champiñones",
+    tipo: "verdura",
+    precio: 20,
+  },
+  {
+    nombre: "carneVacuna",
+    tipo: "medallon",
+    precio: 50,
+  },
+  {
+    nombre: "deTofu",
+    tipo: "medallon",
+    precio: 65,
+  },
+  {
+    nombre: "deCereales",
+    tipo: "medallon",
+    precio: 80,
+  },
+  {
+    nombre: "fullBlack",
+    tipo: "medallon",
+    precio: 120,
+  },
+  {
+    nombre: "panClasico",
+    tipo: "pan",
+    precio: 30,
+  },
+  {
+    nombre: "panBlack",
+    tipo: "pan",
+    precio: 200,
+  },
+  {
+    nombre: "cheddar",
+    tipo: "queso",
+    precio: 30,
+  },
+  {
+    nombre: "vegano",
+    tipo: "queso",
+    precio: 30,
+  },
+  {
+    nombre: "mayonesa",
+    tipo: "salsa",
+    precio: 0,
+  },
+  {
+    nombre: "mostaza",
+    tipo: "salsa",
+    precio: 0,
+  },
+  {
+    nombre: "deTomate",
+    tipo: "salsa",
+    precio: 0,
+  },
+  {
+    nombre: "secreta",
+    tipo: "salsa",
+    precio: 0,
+  },
+];
+
+// Ahora para ordenar los precios de Menor a Mayor
+arrayProductos.sort((a, b) => {
+  if (a.precio < b.precio) {
+    return -1;
+  }
+
+  if (a.precio > b.precio) {
+    return 1;
+  }
+
+  return 0;
+});
+
+console.log(arrayProductos);
+
+// Array Carrito Al comprar alguna Hamburgesa hace Push en "carrito" En Construccion
+
+let carrito = [];
